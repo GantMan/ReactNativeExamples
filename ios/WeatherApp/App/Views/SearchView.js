@@ -135,10 +135,10 @@ var SearchView = React.createClass({
 					style={styles.image}
 					source={require('image!background')}>
 					<View style={styles.innerContainer}>
-						<Text style={styles.text}>Get your Weather dose!</Text>
+						<Text style={styles.text}>!Get your Weather dose!</Text>
 
 						<TextInput
-							placeholder='Enter your city name'
+							placeholder='!Enter your city name'
 							style={styles.textInput}
 							value={this.state.searchString}
 							onChange={this.handleTextInputChange}></TextInput>
@@ -161,9 +161,10 @@ var styles = StyleSheet.create({
 	},
 	searchContainer: {
 		flex: 1,
-		//justifyContent: 'flex-start',
+		//width: 300,
+		justifyContent: 'flex-start',
 		marginTop: 65,
-		alignItems: 'stretch',
+		//alignItems: 'stretch',
 		backgroundColor: 'transparent',
 	},
 	innerContainer: {
@@ -204,6 +205,7 @@ var styles = StyleSheet.create({
 	},
 	buttonText: {
 		fontSize: 18,
+		flex: 1,
 		fontWeight: 'bold',
 		color: 'white',
 		alignSelf: 'center'
